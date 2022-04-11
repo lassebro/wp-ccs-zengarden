@@ -24,3 +24,41 @@ header > h2 {
     font-size: 4vw;
 }
 
+.main {
+    display: grid;
+}
+
+@media(max-width: 768px) {
+    /* For mobile phones: */
+    [class*="main"] {
+        grid-template-columns: ;
+    }
+}
+
+
+.explanation{
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.participation{
+    grid-column: 2/span 2;
+    grid-row: 2;
+}
+
+.participation:before{
+    background: url("Element.png");
+    grid-column: 1;
+    grid-row: 2;
+    content: "";
+}
+
+.benefits{
+    grid-column: 1/span 2;
+    grid-row: 3;
+}
+
+.requirements{
+    grid-column: 2/span 2;
+    grid-row: 4;
+}
