@@ -2,11 +2,14 @@
     GENERAL
  -----------------------------------------------------------------------------------------*/
 body{
-    margin: 8vw;
+    margin: 10vw;
     font-family: Segoe UI;
 }
 /*----------------------------------------------------------------------------------------*/
 
+element{
+    --accent-color: #ADDCE9;
+}
 
 /*-----------------------------------------------------------------------------------------
     INTRO SECTION
@@ -34,6 +37,24 @@ header > h2 {
 
 .summary {
     text-align: center;
+}
+
+.preamble{
+    background-color: rgba(173, 220, 233, 60%);
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+.preamble > * {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.preamble > h3 {
+    padding-top: 50px;
+}
+.preamble > p:last-child{
+    padding-bottom: 50px;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -74,22 +95,22 @@ header > h2 {
         grid-column: 3/span 2;
         grid-row: 4;
     }
-
     footer {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        position: fixed;
-        right: 0;
-        opacity: 0.6;
-        margin-right: 16px;
-    }
 
+        position: fixed;
+        top: 40%;
+        right: 0;
+        margin-right: 16px;
+
+        opacity: 0.6;
+    }
 
     footer > * {
         margin-top: 10px;
         border-radius: 50%;
+        border: 2px solid white;
         height: 60px;
         width: 60px;
         background-color: #ADDCE9;
