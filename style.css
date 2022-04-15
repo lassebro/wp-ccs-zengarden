@@ -1,28 +1,37 @@
 /*-----------------------------------------------------------------------------------------
     GENERAL
  -----------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Bebas+Neue&family=Playfair+Display:ital@1&display=swap');
+
+html {
+    margin: auto;
+    display: table;
+}
 body{
     margin: 10vw;
-    font-family: Segoe UI;
+    font-family: "PT Sans Narrow", sans-serif;
     font-size: 22px;
+    max-width: 3840px;
 }
 
 a {
     color:black;
-    text-decoration: #ADDCE9 3px underline;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: #ADDCE9;
+    text-decoration-thickness: 3px;
 }
 
 a:hover {
     font-size: 23px;
     color: #ADDCE9;
-
 }
 
 abbr {
     text-decoration: none;
 }
 
-h3 {
+h2, h3 {
     font-size: 35px;
 }
 /*----------------------------------------------------------------------------------------*/
@@ -35,8 +44,7 @@ h3 {
 }
 header > h1 {
     text-align: center;
-    font-size: 10vw;
-    font-family: Century Gothic;
+    font-family: "Bebas Neue", sans-serif;
     color: #32322e;
     background: url("Element.png");
     background-repeat: no-repeat;
@@ -45,10 +53,28 @@ header > h1 {
     margin-bottom: 0;
 }
 
+@media only screen {
+    header > h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width:  576px) {
+    header > h1 {
+        font-size: 150px;
+    }
+}
+
+@media only screen and (min-width:  992px) {
+    header > h1 {
+        font-size: 250px;
+    }
+}
+
+
 header > h2 {
     margin-top: 5vh;
     text-align: center;
-    font-size: 4vw;
 }
 
 .summary {
@@ -199,7 +225,7 @@ header > h2 {
 
 .design-selection > h3{
     padding-top: 50px;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 33px;
 }
 
@@ -231,7 +257,7 @@ header > h2 {
 }
 
 .design-selection > nav > ul > li:nth-child(odd):before{
-    font-family: "Adobe Devanagari";
+    font-family: "Bebas Neue", sans-serif;
     word-spacing: normal;
     font-size: 60px;
     position: absolute;
@@ -244,10 +270,10 @@ header > h2 {
 }
 
 .design-selection > nav > ul > li:nth-child(even):after {
+    font-family: "Bebas Neue", sans-serif;
     position: absolute;
     margin-top: -65px;
     margin-left: 15px;
-    font-family: "Adobe Devanagari";
     font-size: 60px;
     word-spacing: normal;
 }
@@ -281,19 +307,25 @@ header > h2 {
     content: "8";
 }
 
+/* ARCHIVES */
+
 .design-archives{
     margin: 0 -10vw;
     background-color: #ADDCE9;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-right: 65px;
+    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
-.design-archives > * {
-    display: inline;
+.design-archives > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .design-archives > nav > ul {
@@ -308,22 +340,22 @@ li.next {
     margin-right: 30px;
 }
 
+.archives {
+    font-size: 23px;
 
+}
 .design-archives > nav > ul > li > a {
     text-decoration-color: white;
 }
 .design-archives > nav > ul > li > a:hover {
     color: white;
 }
-/* ARCHIVES AND RESOURCES FOOTER */
+
+/* RESOURCES */
 
 .zen-resources{
     display: flex;
     align-content: center;
-}
-
-.archives {
-    font-size: 23px;
 }
 
 .zen-resources > ul {
@@ -339,9 +371,7 @@ li.next {
 .zen-resources > ul > * {
     margin-right: 15px;
 }
-.zen-resources > ul > li > a:hover {
 
-}
 .resources {
     font-size: 23px;
 }
