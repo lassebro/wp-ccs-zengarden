@@ -7,10 +7,6 @@ body{
 }
 /*----------------------------------------------------------------------------------------*/
 
-element{
-    --accent-color: #ADDCE9;
-}
-
 /*-----------------------------------------------------------------------------------------
     INTRO SECTION
  -----------------------------------------------------------------------------------------*/
@@ -72,18 +68,28 @@ header > h2 {
     padding-top: 0;
 }
 
-main > *:not(.requirements) > hr {
-    margin-top: 8px;
+.main > * > h3 {
     text-align: center;
+}
+
+.main > footer {
+    display: flex;
+}
+
+.main > footer > * {
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #ADDCE9;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 992px){
     .main > *:not(footer) {
         margin-bottom: 20px;
     }
-
     footer{
-        display: flex;
         margin: auto;
         max-width: 320px;
         justify-content: space-evenly;
@@ -91,18 +97,11 @@ main > *:not(.requirements) > hr {
 
     footer > * {
         margin: 0;
-        border-radius: 50%;
-        border: 2px solid white;
         height: 50px;
         width: 50px;
-        background-color: #ADDCE9;
-        color: white;
-        text-align: center;
-        vertical-align: middle;
         line-height: 50px;
     }
 }
-
 
 @media only screen and (min-width: 992px) {
     .main {
@@ -134,29 +133,25 @@ main > *:not(.requirements) > hr {
         grid-column: span 4;
         grid-row: 3;
     }
-    footer {
-        display: flex;
-        flex-direction: column;
 
+    footer {
+        flex-direction: column;
         position: fixed;
         top: 40%;
         right: 0;
         margin-right: 16px;
-
         opacity: 0.6;
     }
 
     footer > * {
         margin-top: 10px;
-        border-radius: 50%;
-        border: 2px solid white;
         height: 60px;
         width: 60px;
-        background-color: #ADDCE9;
-        color: white;
-        text-align: center;
-        vertical-align: middle;
         line-height: 60px;
+    }
+
+    footer > *:hover{
+        transform: scale(1.05);
     }
 }
 
@@ -165,8 +160,162 @@ main > *:not(.requirements) > hr {
 /*-----------------------------------------------------------------------------------------
     SIDEBAR SECTION
  -----------------------------------------------------------------------------------------*/
-    
+.sidebar{
+    margin-top: 75px;
+}
 
+/* DESIGN SELECTION */
 
+.design-selection{
+   text-align: center;
+    margin: 0 -10vw;
+    background-color: #ADDCE9;
+}
 
+.design-selection > * {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.design-selection > h3{
+    padding-top: 50px;
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 33px;
+}
+
+.design-selection > nav {
+    padding-bottom: 10px;
+}
+
+.design-selection > nav > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    grid-gap: 20px;
+    word-spacing: 100vw;
+}
+
+.design-selection > nav > ul > li > a:hover {
+    color: white;
+}
+
+.design-selection > nav > ul > li > a {
+    word-spacing: normal;
+    color: black;
+}
+
+.design-selection > nav > ul > li:nth-child(odd){
+    text-align: right;
+}
+
+.design-selection > nav > ul > li:nth-child(odd):before{
+    font-family: "Adobe Devanagari";
+    word-spacing: normal;
+    font-size: 60px;
+    position: absolute;
+    margin-left: -42px;
+    margin-top: -23px;
+}
+
+.design-selection > nav > ul > li:nth-child(even){
+    text-align: left;
+}
+
+.design-selection > nav > ul > li:nth-child(even):after {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 9px;
+    font-family: "Adobe Devanagari";
+    font-size: 60px;
+    word-spacing: normal;
+}
+
+.design-selection > nav > ul > li:last-child:after{
+    margin-left: 40px;
+}
+
+.design-selection > nav > ul > li:nth-child(1)::before{
+    content: "1";
+}
+.design-selection > nav > ul > li:nth-child(3)::before{
+    content: "2";
+}
+.design-selection > nav > ul > li:nth-child(5)::before{
+    content: "3";
+}
+.design-selection > nav > ul > li:nth-child(7)::before{
+    content: "4";
+}
+.design-selection > nav > ul > li:nth-child(2)::after{
+    content: "5";
+}
+.design-selection > nav > ul > li:nth-child(4)::after{
+    content: "6";
+}
+.design-selection > nav > ul > li:nth-child(6)::after{
+    content: "7";
+}
+.design-selection > nav > ul > li:nth-child(8)::after{
+    content: "8";
+}
+
+.design-archives{
+    margin: 0 -10vw;
+    background-color: #ADDCE9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 65px;
+    padding-bottom: 50px;
+}
+
+.design-archives > * {
+    display: inline;
+}
+
+.design-archives > nav > ul {
+    display: inline-flex;
+}
+
+.design-archives > nav > ul > li {
+    list-style-type: none;
+}
+
+li.next {
+    margin-right: 30px;
+}
+
+li > a {
+    color: black;
+}
+
+.design-archives > nav > ul > li > a:hover {
+    color: white;
+}
+/* ARCHIVES AND RESOURCES FOOTER */
+
+.zen-resources{
+    display: flex;
+    align-content: center;
+}
+
+.zen-resources > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.zen-resources > ul > * {
+    margin-right: 15px;
+}
+.zen-resources > ul > li > a:hover {
+    color: #ADDCE9;
+}
 /*----------------------------------------------------------------------------------------*/
