@@ -4,6 +4,26 @@
 body{
     margin: 10vw;
     font-family: Segoe UI;
+    font-size: 22px;
+}
+
+a {
+    color:black;
+    text-decoration: #ADDCE9 3px underline;
+}
+
+a:hover {
+    font-size: 23px;
+    color: #ADDCE9;
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 35px;
 }
 /*----------------------------------------------------------------------------------------*/
 
@@ -83,6 +103,7 @@ header > h2 {
     color: white;
     text-align: center;
     vertical-align: middle;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 992px){
@@ -91,15 +112,15 @@ header > h2 {
     }
     footer{
         margin: auto;
-        max-width: 320px;
+        max-width: 400px;
         justify-content: space-evenly;
     }
 
     footer > * {
         margin: 0;
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
+        height: 65px;
+        width: 65px;
+        line-height: 65px;
     }
 }
 
@@ -142,12 +163,11 @@ header > h2 {
         margin-right: 16px;
         opacity: 0.6;
     }
-
     footer > * {
         margin-top: 10px;
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
+        height: 65px;
+        width: 65px;
+        line-height: 65px;
     }
 
     footer > *:hover{
@@ -179,7 +199,6 @@ header > h2 {
 
 .design-selection > h3{
     padding-top: 50px;
-    font-size: 40px;
     margin: 0px;
     margin-bottom: 33px;
 }
@@ -204,6 +223,7 @@ header > h2 {
 .design-selection > nav > ul > li > a {
     word-spacing: normal;
     color: black;
+    text-decoration-color: white;
 }
 
 .design-selection > nav > ul > li:nth-child(odd){
@@ -226,14 +246,14 @@ header > h2 {
 .design-selection > nav > ul > li:nth-child(even):after {
     position: absolute;
     margin-top: -65px;
-    margin-left: 9px;
+    margin-left: 15px;
     font-family: "Adobe Devanagari";
     font-size: 60px;
     word-spacing: normal;
 }
 
 .design-selection > nav > ul > li:last-child:after{
-    margin-left: 40px;
+    margin-left: 55px;
 }
 
 .design-selection > nav > ul > li:nth-child(1)::before{
@@ -288,10 +308,10 @@ li.next {
     margin-right: 30px;
 }
 
-li > a {
-    color: black;
-}
 
+.design-archives > nav > ul > li > a {
+    text-decoration-color: white;
+}
 .design-archives > nav > ul > li > a:hover {
     color: white;
 }
@@ -300,6 +320,10 @@ li > a {
 .zen-resources{
     display: flex;
     align-content: center;
+}
+
+.archives {
+    font-size: 23px;
 }
 
 .zen-resources > ul {
@@ -316,6 +340,9 @@ li > a {
     margin-right: 15px;
 }
 .zen-resources > ul > li > a:hover {
-    color: #ADDCE9;
+
+}
+.resources {
+    font-size: 23px;
 }
 /*----------------------------------------------------------------------------------------*/
