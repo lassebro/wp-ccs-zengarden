@@ -8,6 +8,9 @@ Datum: 15.04.2022
 
 Projektbeschreibung: Aufgabe 01 (CSS-Zengarden) für das Modul Web-Programmierung Sommersemester 2022
 
+Siehe mehr über die Projektidee: 
+https://www.csszengarden.com/
+
 
 
 ## Quellennachweis
