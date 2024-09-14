@@ -37,7 +37,3 @@ HTML-Code stammt von http://ccszengarden.com
 ## Installationsanleitung
 
 HTML-File öffnen. Das richtige CSS ist bereits integriert
-
-**Alternativ**
-
-Abrufbar unter: https://informatik.th-brandenburg.de/~broer/css-zengarden
